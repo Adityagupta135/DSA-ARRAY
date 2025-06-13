@@ -1,0 +1,49 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+int main() {
+   
+int n;
+int a[n];
+
+
+cout<<"enter the size of array";
+cin>>n;
+
+
+for(int i=0; i<n; i++)
+{
+    cin>> a[i];
+    
+}
+
+int mini = a[0];
+
+int maxi = a[0];
+
+
+
+   for(int i=0;i<n; i++)
+{
+    
+if(mini > a[i])    
+    {
+        mini = a[i];
+    }
+    
+   else if(maxi < a[i]) {
+        
+        maxi = a[i];
+    
+    
+   }
+}
+
+
+    cout<<"maximum value is"<< maxi;
+    
+    cout<<"minimum value is"<<mini;
+
+    return 0;
+}
